@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area of Rectangle</title>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 300px;
+    }
+    h2 {
+      color: #333;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #result {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Area of Rectangle</h2>
+    <input type="number" id="length" placeholder="Enter length">
+    <input type="number" id="width" placeholder="Enter width">
+    <button onclick="calculateArea()">Calculate</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    // Function to calculate area of rectangle
+    function areaOfRectangle(length, width) {
+      return length * width;
+    }
+
+    // Function to get values and display result
+    function calculateArea() {
+      let length = document.getElementById("length").value;
+      let width = document.getElementById("width").value;
+
+      if (length === "" || width === "") {
+        document.getElementById("result").innerText = "Please enter both values!";
+        return;
+      }
+
+      let area = areaOfRectangle(length, width);
+      document.getElementById("result").innerText = "Area of rectangle is: " + area;
+    }
+  </script>
+</body>
+</html>
