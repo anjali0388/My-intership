@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .conatiner{
+            width: 100%;
+            height: 100vh;
+            background-color: lightblue;
+
+            justify-content: center;
+            align-items: center;
+            
+        }
+        button{
+            margin: 600px;
+            align-items: center;
+            width: 150px;
+            height: 40px;
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .button{
+            text-align: center;
+            padding: 10px;
+
+        }   
+        h1{
+            padding: 90px;
+            text-align: center;
+            color: white;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+    <h1 id="color-change">Hello Everuone My Name is Anjali Yadav</h1>
+    <div class="button">
+    <button id="btn1">RED-Button</button>
+    <button id="btn2">Blue-Button</button>
+    <button id="btn3">Yellow-Button</button>
+    <button id="btn4">Black-Button</button>
+    <button id="btn5">Green-Button</button>
+    <button id="btn6">Orange-Button</button>
+        </div>
+    </div>
+    <script>
+        
+
+const heading=document.getElementById("color-change");
+//button1 redcolor
+        const btn1=document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{
+            heading.style.color="red";
+        }
+        );
+//button2 bluecolor
+        const btn2=document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{
+            heading.style.color="blue";
+        }
+        );
+        //button3 yellowcolor
+        const btn3=document.getElementById("btn3");  
+        btn3.addEventListener("click",()=>{
+            heading.style.color="yellow";
+        }
+        );
+        //button4 blackcolor
+        const btn4=document.getElementById("btn4");
+        btn4.addEventListener("click",()=>{
+            heading.style.color="black";            
+        });
+        //button5 greencolor
+        const btn5=document.getElementById("btn5");     
+        btn5.addEventListener("click",()=>{
+            heading.style.color="green";            
+        });
+//button6 orangecolor
+    const btn6=document.getElementById("btn6");
+    btn6.addEventListener("click",()=>{            
+        heading.style.color="orange"
+    });       
+        
+
+    </script>
+</body>
+</html
