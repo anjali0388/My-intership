@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+<html>
+<head>
+    <title>Voter Check</title>
+</head>
+<body>
+    <h2>Check Voter Eligibility</h2>
+
+    <input type="number" id="age" placeholder="Enter your age">
+    <button onclick="check()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        // Arrow function
+        let voter = (age) => {
+            if(age >= 18)
+                return "You can vote";
+            else
+                return "You cannot vote";
+        }
+
+        function check(){
+            let age = document.getElementById("age").value;
+            document.getElementById("result").innerText = voter(age);
+        }
+    </script>
+</body>
+</html>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
