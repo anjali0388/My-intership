@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+.home{
+    text-align: center;
+    background-color: aquamarine;
+    align-items: center;
+    height: 100vh;
+}
+button{
+           margin: 600px;
+            align-items: center;
+            width: 150px;
+            height: 40px;
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .button{
+            text-align: center;
+            padding: 10px;
+
+        }
+        h1{
+            padding: 100px;
+        }
+    </style>
+</head>
+<body><div class="home">
+    <h1 id="heading">Hello everyone</h1>
+    <button id="bold">Bold</button>
+    <button id="italic">Italic</button>
+    <button id="underline">underline</button>
+    </div>
+
+    <script>
+        const boldbtn= document.getElementById("bold");
+        const italicbtn= document.getElementById("italic");
+        const underlinebtn= document.getElementById("underline");
+        
+        boldbtn.addEventListener("mouseover",()=>{
+            heading.style.fontWeight="bold";
+        });
+         boldbtn.addEventListener("mouseout",()=>{
+            heading.style.fontWeight="normal";
+        });
+        
+        
+          italicbtn.addEventListener("mouseover",()=>{
+            heading.style.fontStyle="italic";
+          }) 
+          italicbtn.addEventListener("mouseout",()=>{
+            heading.style.fontStyle="normal";
+          }) 
+
+
+
+        underlinebtn.addEventListener("mouseover",()=>{
+            heading.style.textDecoration="underline";
+        });
+         underlinebtn.addEventListener("mouseout",()=>{
+            heading.style.textDecoration="none";
+        });
+    </script>
+
+    
+</body>
+</html>

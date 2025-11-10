@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Form</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: green;
+    }
+    .form {
+        background-color: green;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    h1 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    label {
+        font-size: 20px;
+        display: block;
+        margin-top: 10px;
+    }
+    input {
+        width: 300px;
+        height: 30px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+    button {
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        background-color: white;
+        color: green;
+        transition: 0.3s;
+    }
+    button:hover {
+        background-color: lightgray;
+    }
+</style>
+</head>
+<body>
+    <div class="form">
+        <h1>Form</h1>
+        <form id="loginform">
+        <label for="name">Name</label>
+        <input  type="text" id="name" placeholder="Enter your Name">
+
+        <label for="number">Mobile Number</label>
+        <input type="number" id="number" placeholder="Enter your Mobile Number">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email">
+
+        <label for="dob">DOB</label>
+        <input type="number" id="dob" placeholder="Enter your Date of Birth">
+
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+       const form=document.getElementById("loginform");
+       form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+
+       const username=document.getElementById("name").value.trim();
+     const useremail=document.getElementById("email").value.trim();
+
+if(username==""||useremail =="")
+{
+    alert("please fill in the field")
+}
+else{
+    alert(`welcome ,${username}!`);
+}
+});
+
+
+
+
+
+
+
+
+
+    //    const number=document.getElementById("number");
+    //    const email=document.getElementById("email");
+    //    const dob=document.getElementById("dob");
+    //    const submitbtn=document.getElementById("submit");
+    //      submitbtn.addEventListener("click",()=>{
+    //         let valid =true;
+    //      })
+    </script>
+</body>
+</html>

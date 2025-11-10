@@ -1,0 +1,254 @@
+ *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* -------- HEADER SECTION -------- */
+
+
+        nav{
+            display: flex;
+            gap: 50px;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            justify-content: center;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        a:hover{
+            color: yellow;
+        }
+
+        /* -------- HOME SECTION -------- */
+        #home{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.888);
+            color: white;
+            padding: 100px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .home-page img{
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        h1{
+            font-size: 45px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        p{
+            font-size: 25px;
+            line-height: 1.5;
+        }
+
+        #btn{
+            margin: 20px 10px;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            background-color: yellow;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #btn:hover{
+            background-color: orange;
+        }
+
+        /* -------- About SECTIONS -------- */
+        /* About section  */
+    .about-page{
+    padding: 25px;
+    height: 110vh;
+    background-color: rgba(0, 0, 0, 0.888);
+    color: white ;
+    tab-size: 0cap;
+    border-top: floralwhite 2px solid;
+
+}
+
+.About1{
+    float: left;
+
+}
+.About1 h2{
+    margin: 26px;
+    font-size: 30px;
+   
+}
+.About1 p{
+    font-size: 22px;
+    line-height: 1.6;
+    margin: 20px;
+}
+.About-img img{
+    float: right;
+    height: 600px;
+    width: 400px;
+    margin: 8px;
+    border-radius: 8px;
+    border: 3px solid green;
+}
+
+h3{
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+#h{
+    text-align: center;
+}
+ul,li{
+    margin: 20px;
+    font-size: 20px;
+}
+
+   /*project page   */
+   .project-page{
+        background-color: rgba(0, 0, 0, 0.888);
+        height: 600px;
+        border-top: white 2px solid;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+   .first-project{
+    font-weight: bold;
+      font-size: 20px;
+      color: black;
+    height: 200px;
+    width: 800px;
+    text-align: center;
+    align-items: center;
+    margin: 200px;
+    box-shadow: rgba(255, 255, 255, 0.63);
+    transition: all0.3s ease; 
+    background-color: aliceblue; 
+   }
+   .second-project{
+    color: black;
+    height: 200px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 800px;
+    margin: 200px;
+    text-align: center;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.8);
+    transition: all(0.3s)ease;  
+    
+   }
+   .second-project:hover{
+    transform: scale(1.2);
+   }
+   .first-project:hover{
+    transform: scale(1.2);
+   }
+   #h2{
+    text-align: center;
+   }
+   /* Contact page */
+   .main-contact{
+    height: 1000px;
+    padding-top: 130px;
+}
+.main-conatact1 h1{
+    margin-left: 600px;
+    font-size: 50px;
+    font-weight: 400;
+
+}
+.main-conatact1 h2{
+    margin-left: 520px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.contact-box{
+    margin-top: 50px;
+    background-color:white;
+    height: 430px;
+    padding-top: 40px;
+    width: 800px;
+    margin-left: 370px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0.2);  
+}
+.contact3{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.form-group{
+    padding-left: 30px;
+    padding-top: 10px;
+
+   
+}
+input{
+    border: 1px solid black;
+    height: 25px;
+}
+::placeholder{
+    padding-left: 30px;
+    color: black;
+}
+.btn5{
+    background-color: black;
+    color:white;
+    font-size: 15px ;
+    font-weight: 400;
+    margin-left: 30px;
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    border: 3px solid orangered;
+    cursor: pointer;
+    margin-bottom: 30px;
+    
+
+}
+.contact-main2{
+    display: flex;
+    height: 400px;
+
+}
+.contact-information{
+    margin-right: 30px;
+    padding-left: 150px;
+    padding-bottom: 80px;
+}
+.item{
+    margin-top: 35px;
+    height: 50px;
+    padding-right: 80px;
+    margin-right: 40px;
+    font-size: 15px;
+    border-bottom: 2px solid black;
+    
+}
+.item i{
+    font-size: 18px;
+    width: 40px;
+    
+}
+
+/*.....CONTACT PAGE CLOSE...*/

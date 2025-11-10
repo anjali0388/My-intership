@@ -14,8 +14,6 @@ header h1{
     background-color: rgba(0, 0, 0, 0.71);
     color: white ;
     tab-size: 0cap;
-    
-
 }
 
 .About1{
@@ -37,7 +35,7 @@ header h1{
     height: 700px;
     width: 400px;
     margin: 8px;
-    border-radius: 10%;
+    border-radius: 8px;
     border: 3px solid green;
 }
 
