@@ -59,13 +59,14 @@
         }
 
         #btn{
+            color: white;
             margin: 20px 10px;
             padding: 15px 25px;
             border-radius: 8px;
             font-size: 18px;
             font-weight: bold;
             border: none;
-            background-color: yellow;
+            background-color:green;
             cursor: pointer;
             transition: 0.3s;
         }
@@ -77,7 +78,7 @@
         /* -------- About SECTIONS -------- */
         /* About section  */
     .about-page{
-    padding: 25px;
+    padding: 35px;
     height: 110vh;
     background-color: rgba(0, 0, 0, 0.888);
     color: white ;
@@ -124,6 +125,10 @@ ul,li{
 }
 
    /*project page   */
+   #project{
+    margin-bottom: 20px;
+    
+   }
    .project-page{
         background-color: rgba(0, 0, 0, 0.888);
         height: 600px;
@@ -252,3 +257,13 @@ input{
 }
 
 /*.....CONTACT PAGE CLOSE...*/
+/* Footer page */
+footer{
+    background-color: rgba(0, 0, 0, 0.888);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    border-top: 2px solid floralwhite;
+}
+
