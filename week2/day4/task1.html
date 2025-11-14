@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+        }
+
+        .card {
+            width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <img id="userImg" src="" alt="profile">
+        <h2 id="userName"></h2>
+        <p id="userEmail"></p>
+        <button onclick="getRandomUser()">New User</button>
+    </div>
+    <script>
+       async function getRandomUser() {
+        const response = await fetch('https://randomuser.me/api/');
+        const data = await response.json();
+
+        const user = data.results[0];
+
+        document.getElementById('userImg').src = user.picture.large;
+        document.getElementById('userName').textContent = `${user.name.first} ${user.name.last}`;
+        document.getElementById('userEmail').textContent = user.email;
+    }
+
+    </script>
+
+
+    
+</body>
+</html>
